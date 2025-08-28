@@ -4,7 +4,7 @@ It can transfer files efficiently. It can also create new file if the provided p
 
 ## 🛠️ Build Instructions
 
-### Prerequisites
+### System requirements
 - C++17 or later
 - CMake (version 3.10+)
 - g++ / clang++
@@ -52,11 +52,18 @@ exit                                           Exit the client application grace
 
 
 ```
+&nbsp;
+&nbsp; 
+&nbsp; 
 <img width="1185" height="238" alt="image" src="https://github.com/user-attachments/assets/79b9ca5b-aa11-403e-9dd3-f764da8cdfdb" />
 
+&nbsp; 
+&nbsp; 
+&nbsp; 
 
 
-#Use Cases
+
+### Use Cases
 
 For Push : 
 - If both remote path and local path are files then data of the local path will be written in the remote path.
@@ -65,16 +72,25 @@ For Push :
 For Pull 
 - If both remote path and local path are files then data of the local path will be written in the remote path.
 - If the remote path is a directory then a new file with .temp name will be created into that directory.
+&nbsp;
+&nbsp;
 
-Request Format
+### Request Format
+&nbsp; 
 
-client side
+## client side response
 
 <img width="1417" height="463" alt="image" src="https://github.com/user-attachments/assets/2e142ce2-3bd5-4acb-a731-49a35ce24aae" />
 
 
-Server side response 
+&nbsp;
+&nbsp; 
+
+## Server side response 
 <img width="1466" height="319" alt="image" src="https://github.com/user-attachments/assets/1edc1ecd-d589-486d-b9ac-e358998d7700" />
+
+&nbsp; 
+&nbsp; 
 
 
 
@@ -110,7 +126,7 @@ Both sides exchange a magic identifier and protocol version to verify compatibil
 The source declares its intent (`PUSH` or `PULL`) so the destination can follow the correct workflow.
 
 ### 📂 3. File Path Exchange
-Source sends the file path. Destination acknowledges readiness for hash or data exchange.
+Source sends the file path or directory path. Destination acknowledges readiness for hash or data exchange.
 
 ### 📊 4. Hash Blueprint Transfer
 The side with the latest file sends a compact list of block hashes (rolling + strong).  
