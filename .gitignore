@@ -1,0 +1,38 @@
+# === Build Files ===
+build/
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+*.dll
+
+# === CMake ===
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# === IDE Files ===
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# === OS/System Files ===
+.DS_Store
+Thumbs.db
+
+# === Logs & Temp ===
+*.log
+*.tmp
+*.bak
+
+# === Binaries ===
+filesync              # final binary if named
+filesync.exe          # Windows binary
+
+
+test_data/
+*.test
