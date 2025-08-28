@@ -68,7 +68,13 @@ For Pull
 
 Request Format
 
+client side
+
 <img width="1417" height="463" alt="image" src="https://github.com/user-attachments/assets/2e142ce2-3bd5-4acb-a731-49a35ce24aae" />
+
+
+Server side response 
+<img width="1466" height="319" alt="image" src="https://github.com/user-attachments/assets/1edc1ecd-d589-486d-b9ac-e358998d7700" />
 
 
 
@@ -113,11 +119,9 @@ The other side uses this to determine which blocks are already synchronized.
 ### 🧩 5. Delta Instruction Stream
 A stream of `CopyBlock` and `InsertData` instructions is sent to reconstruct the target file with minimal data.
 
-### ✅ 6. Final Acknowledgment
-A status message confirms success or reports any failure.  
-Both sides cleanly close the session afterward.
 
-> ❗ All operations include **status reporting** to handle errors gracefully and ensure synchronization integrity.
+
+
 
 
 
